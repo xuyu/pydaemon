@@ -1,0 +1,9 @@
+== README ==
+
+tornado.options.define("daemon", type=bool, help="daemonize")
+tornado.options.parse_command_line()
+
+...
+
+if tornado.options.options.daemon:
+	daemonize()
